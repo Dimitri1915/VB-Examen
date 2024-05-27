@@ -42,17 +42,38 @@ Begin VB.Form Form2
          Caption         =   "SALIR"
       End
    End
-   Begin VB.Menu altas 
-      Caption         =   "ALTAS"
+   Begin VB.Menu producto 
+      Caption         =   "PRODUCTOS"
+      Begin VB.Menu alta 
+         Caption         =   "ALTAS"
+      End
+      Begin VB.Menu baja 
+         Caption         =   "BAJAS"
+      End
+      Begin VB.Menu consulta 
+         Caption         =   "CONSULTAS"
+      End
+      Begin VB.Menu modificacion 
+         Caption         =   "MODIFICACIONES"
+      End
    End
-   Begin VB.Menu bajas 
-      Caption         =   "BAJAS"
+   Begin VB.Menu entrada 
+      Caption         =   "ENTRADAS"
+      Begin VB.Menu compras 
+         Caption         =   "COMPRAS"
+      End
    End
-   Begin VB.Menu consultas 
-      Caption         =   "CONSULTAS"
+   Begin VB.Menu salida 
+      Caption         =   "SALIDAS"
+      Begin VB.Menu venta 
+         Caption         =   "VENTAS"
+      End
    End
-   Begin VB.Menu modificaciones 
-      Caption         =   "MODIFICACIONES DE PRODUCTO"
+   Begin VB.Menu reporte 
+      Caption         =   "REPORTES"
+      Begin VB.Menu reportegen 
+         Caption         =   "REPORTE GENERAL"
+      End
    End
 End
 Attribute VB_Name = "Form2"
