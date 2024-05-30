@@ -81,7 +81,23 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Private Sub alta_Click()
+Form3.Show
+End Sub
+
+Private Sub baja_Click()
+Form4.Show
+End Sub
+
+Private Sub consulta_Click()
+Form5.Show
+End Sub
+
+Private Sub modificacion_Click()
+Form6.Show
+End Sub
+
 Private Sub salir_Click()
-MsgBox "Gracias por utilizar este sistema. Hasta la proxima."
+MsgBox "GRACIAS POR UTILIZAR ESTE SISTEMA. HASTA LA PROXIMA."
 End
 End Sub

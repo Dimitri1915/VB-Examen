@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin VB.Form Form1 
    BackColor       =   &H8000000B&
-   Caption         =   "Log in"
+   Caption         =   "INICIAR SESIÓN"
    ClientHeight    =   7110
    ClientLeft      =   120
    ClientTop       =   465
@@ -23,10 +23,10 @@ Begin VB.Form Form1
       Width           =   3975
       Begin VB.TextBox Text2 
          BeginProperty Font 
-            Name            =   "Cascadia Code"
+            Name            =   "Cascadia Code SemiBold"
             Size            =   12
             Charset         =   0
-            Weight          =   700
+            Weight          =   600
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
@@ -40,10 +40,10 @@ Begin VB.Form Form1
       Begin VB.CommandButton Command1 
          Caption         =   "ENTRAR"
          BeginProperty Font 
-            Name            =   "Cascadia Code"
+            Name            =   "Cascadia Code SemiBold"
             Size            =   12
             Charset         =   0
-            Weight          =   700
+            Weight          =   600
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
@@ -56,10 +56,10 @@ Begin VB.Form Form1
       End
       Begin VB.TextBox Text1 
          BeginProperty Font 
-            Name            =   "Cascadia Code"
+            Name            =   "Cascadia Code SemiBold"
             Size            =   12
             Charset         =   0
-            Weight          =   700
+            Weight          =   600
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
@@ -74,10 +74,10 @@ Begin VB.Form Form1
          BackColor       =   &H8000000B&
          Caption         =   "CONTRASEÑA"
          BeginProperty Font 
-            Name            =   "Cascadia Code"
+            Name            =   "Cascadia Code SemiBold"
             Size            =   12
             Charset         =   0
-            Weight          =   700
+            Weight          =   600
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
@@ -92,10 +92,10 @@ Begin VB.Form Form1
          BackColor       =   &H8000000B&
          Caption         =   "USUARIO"
          BeginProperty Font 
-            Name            =   "Cascadia Code"
+            Name            =   "Cascadia Code SemiBold"
             Size            =   12
             Charset         =   0
-            Weight          =   700
+            Weight          =   600
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
@@ -111,10 +111,10 @@ Begin VB.Form Form1
          BackColor       =   &H8000000B&
          Caption         =   " TIENDA DE ABARROTES "
          BeginProperty Font 
-            Name            =   "Cascadia Code"
+            Name            =   "Cascadia Code SemiBold"
             Size            =   12
             Charset         =   0
-            Weight          =   700
+            Weight          =   600
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
