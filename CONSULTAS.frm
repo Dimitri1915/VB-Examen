@@ -1,13 +1,13 @@
 VERSION 5.00
 Begin VB.Form Form5 
    BackColor       =   &H8000000B&
-   Caption         =   "Form5"
-   ClientHeight    =   6165
+   Caption         =   "CONSULTAS DE PRODUCTO"
+   ClientHeight    =   7110
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   6990
    LinkTopic       =   "Form5"
-   ScaleHeight     =   6165
+   ScaleHeight     =   7110
    ScaleWidth      =   6990
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command3 
@@ -24,7 +24,7 @@ Begin VB.Form Form5
       Height          =   615
       Left            =   3600
       TabIndex        =   10
-      Top             =   5160
+      Top             =   6120
       Width           =   3015
    End
    Begin VB.CommandButton Command2 
@@ -41,7 +41,7 @@ Begin VB.Form Form5
       Height          =   615
       Left            =   360
       TabIndex        =   9
-      Top             =   5160
+      Top             =   6120
       Width           =   3015
    End
    Begin VB.CommandButton Command1 
@@ -76,6 +76,41 @@ Begin VB.Form Form5
       TabIndex        =   1
       Top             =   1320
       Width           =   4575
+   End
+   Begin VB.Label Label9 
+      BackColor       =   &H8000000B&
+      Caption         =   "PRECIO UNITARIO"
+      BeginProperty Font 
+         Name            =   "Cascadia Code SemiBold"
+         Size            =   12
+         Charset         =   0
+         Weight          =   600
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   360
+      TabIndex        =   12
+      Top             =   5160
+      Width           =   1815
+   End
+   Begin VB.Label Label8 
+      BackColor       =   &H8000000B&
+      BeginProperty Font 
+         Name            =   "Cascadia Code SemiBold"
+         Size            =   12
+         Charset         =   0
+         Weight          =   600
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   615
+      Left            =   2520
+      TabIndex        =   11
+      Top             =   5160
+      Width           =   4095
    End
    Begin VB.Label Label7 
       BackColor       =   &H8000000B&
@@ -219,18 +254,18 @@ Private Sub Command1_Click()
     Do While Not EOF(1)
         Line Input #1, line
         datos = Split(line, ";")
-        
-        If Trim(datos(0)) = Trim(codigoBuscado) Then
 
+        If Trim(datos(0)) = Trim(codigoBuscado) Then
             Label5.Caption = datos(0)
             Label6.Caption = datos(1)
             Label7.Caption = datos(2)
+            Label8.Caption = datos(3)
             encontrado = True
             Exit Do
         End If
     Loop
     Close #1
-    
+
     If Not encontrado Then
         MsgBox "PRODUCTO NO ENCONTRADO."
     End If
@@ -241,6 +276,8 @@ Text1.Text = ""
 Label5.Caption = ""
 Label6.Caption = ""
 Label7.Caption = ""
+Label8.Caption = ""
+Text1.SetFocus
 End Sub
 
 Private Sub Command3_Click()

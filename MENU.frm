@@ -31,7 +31,7 @@ Begin VB.Form Form2
    Begin VB.Image Image1 
       Height          =   2650
       Left            =   120
-      Picture         =   "Form2.frx":0000
+      Picture         =   "MENU.frx":0000
       Stretch         =   -1  'True
       Top             =   120
       Width           =   2650
@@ -89,6 +89,10 @@ Private Sub baja_Click()
 Form4.Show
 End Sub
 
+Private Sub compras_Click()
+Form7.Show
+End Sub
+
 Private Sub consulta_Click()
 Form5.Show
 End Sub
@@ -97,7 +101,15 @@ Private Sub modificacion_Click()
 Form6.Show
 End Sub
 
+Private Sub reportegen_Click()
+Form9.Show
+End Sub
+
 Private Sub salir_Click()
 MsgBox "GRACIAS POR UTILIZAR ESTE SISTEMA. HASTA LA PROXIMA."
 End
+End Sub
+
+Private Sub venta_Click()
+Form8.Show
 End Sub
